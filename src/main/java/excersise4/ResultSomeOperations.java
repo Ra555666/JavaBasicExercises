@@ -1,6 +1,6 @@
 package excersise4;
 
-public class Result {
+public class ResultSomeOperations {
     public static void main(String[] args) {
         float firstOperation = -5 + 8 * 6;
         System.out.println("-5 + 8 * 6" + " = " + (int)firstOperation);
