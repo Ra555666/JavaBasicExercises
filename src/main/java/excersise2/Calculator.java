@@ -2,7 +2,7 @@ package excersise2;
 
 import java.util.Scanner;
 
-public class Sum {
+public class Calculator {
     private int firstNumber;
     private int secondNumber;
 
@@ -26,13 +26,18 @@ public class Sum {
         return (this.firstNumber + this.secondNumber);
     }
 
+    public int dividingTwoNumbers(){
+        return (this.firstNumber / this.secondNumber);
+    }
+
     public static void main(String[] args) {
-        Sum sum = new Sum();
+        Calculator calculator = new Calculator();
         Scanner input = new Scanner(System.in);
         System.out.println("Input first number");
-        sum.setFirstNumber(input.nextInt());
+        calculator.setFirstNumber(input.nextInt());
         System.out.println("Input second number");
-        sum.setSecondNumber(input.nextInt());
-        System.out.println("Sum of two your number is " + sum.summingTwoNumbers());
+        calculator.setSecondNumber(input.nextInt());
+        System.out.println("Sum of two your number is " + calculator.summingTwoNumbers());
+        System.out.println("Divide of two your number is " + calculator.dividingTwoNumbers());
     }
 }
